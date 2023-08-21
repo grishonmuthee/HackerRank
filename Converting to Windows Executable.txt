@@ -1,0 +1,11 @@
+To convert your Python script into a standalone .exe file on Windows, you can use a tool called pyinstaller. 
+
+Terminal: 
+	pip install pyinstaller
+	cd path/to/your/script/directory
+	pyinstaller --onefile your_calculator_script.py
+	
+	
+Once the process is complete, you'll find a dist folder in your script's directory. Inside the dist folder, you'll find the standalone .exe file of your calculator application. Double-click the .exe file to run your calculator application.
+
+

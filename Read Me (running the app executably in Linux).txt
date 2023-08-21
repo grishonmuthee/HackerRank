@@ -1,0 +1,25 @@
+To convert the alculator app into a Linux GUI application, you'll follow similar steps as for any other GUI application on Linux.
+
+Terminal:
+Install Tkinter
+	sudo apt-get install python3-tk
+At the top of your Python script, add a shebang line that points to your Python interpreter. Since you're using Python 3, this would look like
+	#!/usr/bin/env python3
+Terminal:
+	chmod +x your_calculator_script.py
+	./your_calculator_script.py
+Create a Desktop Entry
+	touch calculator.desktop
+Open the file using a text editor and add the following content:
+	[Desktop Entry]
+	Name=Simple Calculator
+	Exec=/path/to/your_calculator_script.py
+	Icon=/path/to/calculator-icon.png
+	Type=Application
+	Terminal=false
+Terminal:
+	chmod +x calculator.desktop
+	mv calculator.desktop ~/.local/share/applications
+
+After completing the steps above, you should be able to find your calculator app in the applications menu on your Linux desktop environment.
+
